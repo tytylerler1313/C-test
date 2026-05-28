@@ -1,4 +1,7 @@
 ```C++
 # Include <iostream>
+# Include <string>
 
-int main() {std::cout<< "Hello, world!\n"; return 0;}
+int main() {std::cout<< "Enter your name:";
+std::cin >> name;
+std::cout<< "Hello," << name <<"!\n"; return 0;}
