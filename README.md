@@ -42,7 +42,7 @@ if (level == 1) {std::cout << "Congrats! There is a reward waiting for you!\n"; 
 if (reward == 1) {std::cout << "Choose your reward:";}
 std::cout << "1. 100 coins\n";
 std::cout << "2. 10 gems\n";
-std::cout << "Please choose one."
+std::cout << "Please choose one.\n";
 
 int reward_choice; //
 std::cin >> reward_choice; //
