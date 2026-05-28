@@ -25,7 +25,7 @@ correct_answer = num1 + num2
 correct_answer_2 = num3 * num4
 std::cout << "What's" << num1 << "+" << num2 << "?";
 std::cout << "1." << correct_answer << "+" rand()% 10 + 1 << "\n";
-std::cout << "2." <<correct_answer\n";
+std::cout << "2." << correct_answer << "\n";
 std::cout << "Please enter 1 or 2.";
 
 int choice;
@@ -35,7 +35,7 @@ else if (choice == 1) {std::cout << "Oops! The answer was wrong."}
 else {std::cout << "Bro. This is an invalid response."}
 
 std::cout << "Next question. What's" << num3 << "*" << num4 << "?";
-std::cout << "1." << correct_answer_2\n";
+std::cout << "1." << correct_answer_2 <<\n";
 std::cout << "2." << correct_answer_2 << "-" << rand()% 10 + 1 << "\n";
 std::cout << "Please enter 1 or 2.";
 
