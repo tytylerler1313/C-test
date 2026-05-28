@@ -10,6 +10,7 @@ std::cout << name << ",lets play a game!\n";
 
 int score = 0; //
 int xp = 0; //
+int level = 0; //
 std::cout << "What's 5 + 5?";
 std::cout << "1. 0\n";
 std::cout << "2. 10\n";
@@ -32,4 +33,5 @@ if (choice_2 == 1) {std::cout << "Correct! Good job.\n"; score = score + 1; xp =
 else if (choice_2 == 2) {std::cout << "Oops! The answer was wrong."}
 else {std::cout << "Bro. This is an invalid response."}
 
-std::cout << "Your final score is" << score << "/2!"; return 0;}
+std::cout << "Your final score is" << score << "/2!";
+if (xp >= 100) {std::cout << "Nice! You have leveled up!\n"; level = level + 1}; return 0;}
