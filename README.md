@@ -46,6 +46,6 @@ std::cout << "Please choose one.\n";
 
 int reward_choice; //
 std::cin >> reward_choice; //
-if (reward_choice == 1) {std::cout << "Great choice! +100 coins!\n"; coins = coins + 100;}
+{if (reward_choice == 1) {std::cout << "Great choice! +100 coins!\n"; coins = coins + 100;}
 else if (reward_choice == 2) {std::cout << "Awesome choice! +10 gems!\n"; gems = gems + 10;}
-else {std::cout << "Please choose a valid reward bro.";} return 0;} //
+else {std::cout << "Please choose a valid reward bro.";}} return 0;} //
