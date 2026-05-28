@@ -11,6 +11,7 @@ std::cout <<"What's 5+5?";
 std::cout <<"1. 0\n";
 std::cout <<"2. 10\n";
 std::cout <<"Please enter 1 or 2.";
+
 int choice
 std::cin >> choice //
 if (answer = 2) {std::cout << "Correct! Good job."};
