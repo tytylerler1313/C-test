@@ -1,8 +1,11 @@
 ```C++
 # Include <iostream>
 # Include <string>
+# Include <cstdlib>
+# Inclue <ctime>
 
-int main() {std::cout << "Enter your name:";
+int main() {srand(time(0));
+std::cout << "Enter your name:";
 std::string name; //
 std::cin >> name; //
 std::cout << "Hello," << name <<"!\n";
@@ -14,25 +17,31 @@ int level = 0; //
 int reward = 0; //
 int coins = 0; //
 int gems = 0; //
-std::cout << "What's 5 + 5?";
-std::cout << "1. 0\n";
-std::cout << "2. 10\n";
+int num1 = rand()% 10 + 1
+int num2 = rand()% 10 + 1
+int num3 = rand()% 7 + 1
+int num4 = rand()% 7 + 1
+correct_answer = num1 + num2
+correct_answer_2 = num3 * num4
+std::cout << "What's" << num1 << "+" << num2 << "?";
+std::cout << "1." << correct_answer << "+" rand()% 10 + 1 << "\n";
+std::cout << "2." <<correct_answer\n";
 std::cout << "Please enter 1 or 2.";
 
 int choice;
 std::cin >> choice; //
-if (choice == 2) {std::cout << "Correct! Good job.\n"; score = score + 1; xp = xp + 25;}
+if (choice == 2) {std::cout << "Correct! Good job.\n"; score = score + 1; xp = xp + 50;}
 else if (choice == 1) {std::cout << "Oops! The answer was wrong."} 
 else {std::cout << "Bro. This is an invalid response."}
 
-std::cout << "Next question. What's 6 * 9?";
-std::cout << "1. 54\n";
-std::cout << "2. 15\n";
+std::cout << "Next question. What's" << num3 << "*" << num4 << "?";
+std::cout << "1." << correct_answer_2\n";
+std::cout << "2." << correct_answer_2 << "-" << rand()% 10 + 1 << "\n";
 std::cout << "Please enter 1 or 2.";
 
 int choice_2;
 std::cin >> choice_2; //
-if (choice_2 == 1) {std::cout << "Correct! Good job.\n"; score = score + 1; xp = xp + 25;}
+if (choice_2 == 1) {std::cout << "Correct! Good job.\n"; score = score + 1; xp = xp + 50;}
 else if (choice_2 == 2) {std::cout << "Oops! The answer was wrong."}
 else {std::cout << "Bro. This is an invalid response."}
 
