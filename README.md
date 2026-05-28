@@ -39,12 +39,13 @@ else {std::cout << "Bro. This is an invalid response."}
 std::cout << "Your final score is" << score << "/2!";
 if (xp >= 100) {std::cout << "Nice! You have leveled up!\n"; level = level + 1}
 if (level == 1) {std::cout << "Congrats! There is a reward waiting for you!\n"; reward = reward + 1;}
-if (reward == 1) {std::cout << "Choose your reward:";
+if (reward == 1) {std::cout << "Choose your reward:";}
 std::cout << "1. 100 coins\n";
 std::cout << "2. 10 gems\n";
-std::cout << "Please choose one."};
+std::cout << "Please choose one."
 
 int reward_choice; //
 std::cin >> reward_choice; //
 if (reward_choice == 1) {std::cout << "Great choice! +100 coins!\n"; coins = coins + 100;}
-else if (reward_choice == 2) {std::cout << "Awesome choice! +10 gems!\n"; gems = gems + 10;} return 0;}
+else if (reward_choice == 2) {std::cout << "Awesome choice! +10 gems!\n"; gems = gems + 10;}
+else {std::cout << "Please choose a valid reward bro.";} return 0;} //
