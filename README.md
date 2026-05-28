@@ -16,6 +16,6 @@ std::cout <<"Please enter 1 or 2.";
 
 int choice;
 std::cin >> choice; //
-if (choice == 2) {std::cout << "Correct! Good job.\n" score = score + 1;//2. Increased score by 1}
+if (choice == 2) {std::cout << "Correct! Good job.\n"; score = score + 1;//2. Increased score by 1}
 else if (choice == 1) {std::cout <<"Oops! The answer was wrong."} 
 else {std::cout <<"Bro. This is an invalid response."} return 0;}
