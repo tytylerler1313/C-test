@@ -36,4 +36,4 @@ else {std::cout << "Bro. This is an invalid response."}
 
 std::cout << "Your final score is" << score << "/2!";
 if (xp >= 100) {std::cout << "Nice! You have leveled up!\n"; level = level + 1}
-if (level == 1) {std::cout << "Congrats! There is a reward waiting for you!\n"; reward = reward + 1;}
+if (level == 1) {std::cout << "Congrats! There is a reward waiting for you!\n"; reward = reward + 1;} return 0;}
