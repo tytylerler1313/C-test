@@ -17,8 +17,8 @@ int level = 0; //
 int reward = 0; //
 int coins = 0; //
 int gems = 0; //
-while (playing == true){
 bool playing = true;
+while (playing == true){
 int num1 = rand()% 10 + 1;
 int num2 = rand()% 10 + 1;
 int correct_answer = num1 + num2;
@@ -61,7 +61,7 @@ int reward_choice; //
 std::cin >> reward_choice; //
 if (reward_choice == 1) {std::cout << "Great choice! +100 coins!\n"; coins = coins + 100;}
 else if (reward_choice == 2) {std::cout << "Awesome choice! +10 gems!\n"; gems = gems + 10;}
-else {std::cout << "Please choose a valid reward bro.";}}}
+else {std::cout << "Please choose a valid reward bro.";}}
 
 int play_again; //
 std::cout << "Do you want to play again?\n";
