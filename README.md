@@ -11,12 +11,14 @@ std::cin >> name; //
 std::cout << "Hello," << name <<"!\n";
 std::cout << name << ",lets play a game!\n";
 
+std::string = "Pet
 int score = 0; //
 int xp = 0; //
 int level = 0; //
 int reward = 0; //
 int coins = 0; //
 int gems = 0; //
+int shiny emeralds = 0; //
 bool playing = true;
 while (playing == true){
 int num1 = rand()% 10 + 1;
@@ -62,6 +64,23 @@ std::cin >> reward_choice; //
 if (reward_choice == 1) {std::cout << "Great choice! +100 coins!\n"; coins = coins + 100;}
 else if (reward_choice == 2) {std::cout << "Awesome choice! +10 gems!\n"; gems = gems + 10;}
 else {std::cout << "Please choose a valid reward bro.";}}
+
+std::cout << "\n--- Welcome to the Shop Of Legends ---\n";
+std::cout << "Your balance:" << coins << "coins," << gems << "gems.\n";
+std::cout << "Please select an item to buy:";
+std::cout << "1. Normal Cat\n";
+std::cout << "2. A Bag of Shiny Emeralds\n";
+std::cout << "3. Exit shop\n";
+
+int shop_option; //
+std::cin >> shop_option; //
+if (shop_option == 1) {(if coins >= 250){coins = coins - 100; pet = "Normal Cat"; std::cout << "NICE! You've successfully bought a Normal Cat! Pet equipped!"}
+else {std::cout << "Bro. You can't afford this item.\n";}}
+else if (shop_option == 2) {(if coins >= 500){coins = coins - 500; shiny emeralds = shiny emeralds + 25; std::cout << "GREAT! You've successfully bought A Bag of Shiny Emeralds! Shiny emeralds + 25!"}
+else {std::cout << "Bro. You can't afford this item.\n";}}
+else {std::cout << "Exiting shop. Mind your steps!"}
+
+
 
 int play_again; //
 std::cout << "Do you want to play again?\n";
