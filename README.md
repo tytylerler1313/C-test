@@ -61,4 +61,13 @@ int reward_choice; //
 std::cin >> reward_choice; //
 if (reward_choice == 1) {std::cout << "Great choice! +100 coins!\n"; coins = coins + 100;}
 else if (reward_choice == 2) {std::cout << "Awesome choice! +10 gems!\n"; gems = gems + 10;}
-else {std::cout << "Please choose a valid reward bro.";}}} return 0;} //
+else {std::cout << "Please choose a valid reward bro.";}}}
+
+int play_again; //
+std::cout << "Do you want to play again?\n";
+std::cout << "1. Yes\n";
+std::cout << "2. No\n";
+std::cin >> play_again; //
+if (play_again == 2) {playing = false; std::cout << "Goodbye! You finished with" << coins << "coins.\n"}
+else if (play_again == 1) {playing = true;}
+else {std::cout << "Bro. Select an option.";} return 0;} //
