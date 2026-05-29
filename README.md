@@ -11,13 +11,13 @@ std::cin >> name; //
 std::cout << "Hello," << name <<"!\n";
 std::cout << name << ",lets play a game!\n";
 
-while (playing == true){
 int score = 0; //
 int xp = 0; //
 int level = 0; //
 int reward = 0; //
 int coins = 0; //
 int gems = 0; //
+while (playing == true){
 bool playing = true;
 int num1 = rand()% 10 + 1;
 int num2 = rand()% 10 + 1;
@@ -68,6 +68,6 @@ std::cout << "Do you want to play again?\n";
 std::cout << "1. Yes\n";
 std::cout << "2. No\n";
 std::cin >> play_again; //
-if (play_again == 2) {playing = false; std::cout << "Goodbye! You finished with" << coins << "coins.\n"}
+if (play_again == 2) {playing = false; std::cout << "Goodbye! You finished with" << coins << "coins.\n";}
 else if (play_again == 1) {playing = true;}
-else {std::cout << "Bro. Select an option.";} return 0;} //
+else {std::cout << "Bro. Select an option.";}} return 0;} //
