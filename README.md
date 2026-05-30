@@ -75,7 +75,7 @@ std::cout << "Please select an item to buy:";
 std::cout << "1. Normal Cat\n";
 std::cout << "2. A Bag of Shiny Emeralds\n";
 std::cout << "3. Exit shop\n";}
-else if (enter_shop = no) {std:: << "Leaving shop..."}
+else if (enter_shop = no) {std::cout << "Leaving shop..."}
 else {std::cout << "Bro you good?"}
 
 int shop_option; //
