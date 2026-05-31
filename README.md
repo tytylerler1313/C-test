@@ -65,7 +65,8 @@ if (reward_choice == 1) {std::cout << "Great choice! +100 coins!\n"; coins = coi
 else if (reward_choice == 2) {std::cout << "Awesome choice! +10 gems!\n"; gems = gems + 10;}
 else {std::cout << "Please choose a valid reward bro.";}}
 std::cout << "Do you want to enter the shop?\n";
-
+std::cout << "1. Yes\n";
+std::cout << "2. No\n";
 int enter_shop; //
 std::cin >> enter_shop; //
 if (enter_shop == 1) {std::cout << "\n--- Welcome to the Shop Of Legends ---\n";
