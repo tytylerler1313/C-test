@@ -54,7 +54,7 @@ else {std::cout << "Bro. This is an invalid response.";}
 
 if (xp >= 100) {std::cout <<"Nice! You have leveled up!\n"; level = level + 1;}
 if (level == 1) {std::cout << "Congrats! There is a reward waiting for you!\n"; reward = reward + 1;}
-if (reward == 1) {std::cout << "Choose your reward:";
+if (reward == 1) {std::cout << "Choose your reward:\n";
 std::cout << "1. 100 coins\n";
 std::cout << "2. 10 gems\n";
 std::cout << "Please choose one.\n";
