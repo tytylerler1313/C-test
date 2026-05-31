@@ -71,7 +71,7 @@ int enter_shop; //
 std::cin >> enter_shop; //
 if (enter_shop == 1) {std::cout << "\n--- Welcome to the Shop Of Legends ---\n";
 std::cout << "Your balance:" << coins << "coins," << gems << "gems.\n";
-std::cout << "Please select an item to buy:";
+std::cout << "Please select an item to buy:\n";
 std::cout << "1. Normal Cat\n";
 std::cout << "2. A Bag of Shiny Emeralds\n";
 std::cout << "3. Exit shop\n";}
