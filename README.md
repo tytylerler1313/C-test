@@ -82,9 +82,9 @@ int shop_option; //
 std::cin >> shop_option; //
 if (shop_option == 1) {if (coins >= 250){coins = coins - 100; petS = "Normal Cat"; std::cout << "NICE! You've successfully bought a Normal Cat! Pet equipped!";}
 else {std::cout << "Bro. You can't afford this item.\n";}}
-else if (shop_option == 2) {if (coins >= 500){coins = coins - 500; shiny emeralds = shiny emeralds + 25; std::cout << "GREAT! You've successfully bought A Bag of Shiny Emeralds! Shiny emeralds + 25!";}
+else if (shop_option == 2) {if (coins >= 500){coins = coins - 500; shiny_emeralds = shiny_emeralds + 25; std::cout << "GREAT! You've successfully bought A Bag of Shiny Emeralds! Shiny emeralds + 25!";}
 else {std::cout << "Bro. You can't afford this item.\n";}}
-else {std::cout << "Exiting shop. Mind your steps!\n"}
+else {std::cout << "Exiting shop. Mind your steps!\n";}
 
 if (petS == "Normal Cat") {multiplier = 1.5;}
 coins *= multiplier;
