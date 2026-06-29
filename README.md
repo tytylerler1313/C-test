@@ -4,6 +4,16 @@
 # include <cstdlib>
 # include <ctime>
 
+int checkNum(int a, int b){
+    if (a == b) {
+        b += rand()% 10 + 1;
+    }
+    return b;
+}
+
+
+void questions() {
+    
 int main() {srand(time(0));
 std::cout << "Enter your name:";
 std::string name; //
@@ -25,7 +35,8 @@ while (playing == true){
 int num1 = rand()% 10 + 1;
 int num2 = rand()% 10 + 1;
 int correct_answer = num1 + num2;
-int wrong_answer = num1 + num2 - rand()% 10 + 1;
+int wrong_answer = num1 + num2 - rand()% 10 + 1; 
+checkNum(correct_answer, wrong_answer);
 std::cout << "What's" <<" "<< num1 << "+" << num2 << "?\n";
 std::cout << "1." << wrong_answer << "\n";
 std::cout << "2." << correct_answer <<"\n";
@@ -88,14 +99,20 @@ else {std::cout << "Exiting shop. Mind your steps!\n";}
 
 if (petS == "Normal Cat") {multiplier = 1.5;}
 coins *= multiplier;
+}
 
-
-
+while (true) {
+questions();
 int play_again; //
 std::cout << "Do you want to play again?\n";
 std::cout << "1. Yes\n";
 std::cout << "2. No\n";
 std::cin >> play_again; //
-if (play_again == 2) {playing = false; std::cout << "Goodbye! You finished with" << coins << "coins.\n";}
+if (play_again == 2) {playing = false; std::cout << "Goodbye! You finished with" << coins << "coins.\n";
+    std::exit();
+}
 else if (play_again == 1) {playing = true;}
-else {std::cout << "Bro. Select an option.";}} return 0;} //
+else {std::cout << "Bro. Select an option.";} return 0;}
+}
+}//stephen
+
