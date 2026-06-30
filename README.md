@@ -35,33 +35,26 @@ while (playing == true){
 int num1 = rand()% 10 + 1;
 int num2 = rand()% 10 + 1;
 int correct_answer = num1 + num2;
-int wrong_answer = num1 + num2 - rand()% 10 + 1; 
+int wrong_answer =/= correct_answer
 checkNum(correct_answer, wrong_answer);
 std::cout << "What's" <<" "<< num1 << "+" << num2 << "?\n";
-std::cout << "1." << wrong_answer << "\n";
-std::cout << "2." << correct_answer <<"\n";
-std::cout << "Please enter 1 or 2.";
 
-int choice;
-std::cin >> choice; //
-if (choice == 2) {std::cout << "Correct! Good job.\n"; score = score + 1; xp = xp + 50;}
-else if (choice == 1) {std::cout << "Oops! The answer was wrong.";} 
-else {std::cout << "Bro. This is an invalid response.";}
+int answer;
+std::cin >> answer; //
+if (answer == correct_answer) {std::cout << "Correct! Good job.\n"; score = score + 1; xp = xp + 50;}
+else if (answer == wrong_answer) {std::cout << "Oops! The answer was wrong.";} 
 
 int num3 = rand()% 7 + 1;
 int num4 = rand()% 7 + 1;
 int correct_answer_2 = num3 * num4;
-int wrong_answer_2 = num3 * num4 - rand()% 15 + 1;
+int wrong_answer_2 =/= correct_answer_2
 std::cout << "What's" <<" "<<num3 << "*" << num4 << "?\n";
-std::cout << "1." << correct_answer_2 << "\n";
-std::cout << "2." << wrong_answer_2 << "\n";
-std::cout << "Please enter 1 or 2.";
 
-int choice_2;
-std::cin >> choice_2; //
-if (choice_2 == 1) {std::cout << "Correct! Good job.\n"; score = score + 1; xp = xp + 50;}
-else if (choice_2 == 2) {std::cout << "Oops! The answer was wrong.";}
-else {std::cout << "Bro. This is an invalid response.";}
+int answer_2;
+std::cin >> answer_2; //
+if (answer_2 == correct_answer_2) {std::cout << "Correct! Good job.\n"; score = score + 1; xp = xp + 50;}
+else if (answer_2 == wrong_answer_2) {std::cout << "Oops! The answer was wrong.";}
+}
 
 if (xp >= 100) {std::cout <<"Nice! You have leveled up!\n"; level = level + 1;}
 if (level == 1) {std::cout << "Congrats! There is a reward waiting for you!\n"; reward = reward + 1;}
